@@ -1,2 +1,3 @@
 # browserify
-对browserify的一些了解
+对browserify的一些认识
+
