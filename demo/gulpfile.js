@@ -8,7 +8,7 @@ var browserify = require('browserify'),
     size = require('gulp-size'),
     gulp = require('gulp'),
 
-	paths = { sourceEntry: './index.js' },
+	paths = { sourceEntry: './src/index.js' },
 
 	assign = function(a,b){
 	 	if(b){ for( var i in b ){ a[i] = b[i]; }}
