@@ -1,5 +1,4 @@
-var $ = require('./lib/jquery'),
-	component = require('./component');
+require('./lib/jquery');
 
 var app = function(){
 
@@ -7,6 +6,11 @@ var app = function(){
 
 var appFn = app.prototype;
 
-$.extend(true, appFn, component);
+
+[
+	require('./component')
+].forEach( function(props){
+	$.extend(true, appFn, props);
+})
 
 module.exports = app;
